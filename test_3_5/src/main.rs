@@ -20,10 +20,28 @@ fn main() {
     // loop
     let mut counter = 0;
     let result = loop {
-        counter + = 1;
+        counter += 1;
         if counter == 10 {
             break counter * 3;
         }
+     };
+     println!("result = {result}");
+
+     //while
+     counter = 2;
+     while counter != 0 {
+        println!("hello");
+        counter -= 1;
      }
-     println!("counter = {counter}");
+
+     //for
+    let arr = [10, 20];
+    for element in arr {
+        println!("element = {element}");
+    }
+
+    for number in (1..=4).rev() {
+        println!("number = {number}");
+    }
+    println!("LIFTOFF!!!");
 }
