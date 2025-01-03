@@ -27,7 +27,7 @@ fn main() {
     println!("r4 = {r4}");
     let r5 = &mut s4;
     println!("r5 = {r5}");
-    // Khong bi error vi pham vi su dung cua r4 da ket thuc.
+    // Khong bi error vi pham vi su dung cua r4 da ket thuc sau println.
 
 
     let mut s5 = String::from("hello");
@@ -41,8 +41,17 @@ fn main() {
     let mut s6 = String::from("hello");
     let r8 = &s6; //no problem
     let r9 = &s6; // no problem
-    let r10 = &mut s6; // BIG PROBLEM vi khong the tham chieu mut trong khi
+    // let r10 = &mut s6; // BIG PROBLEM vi khong the tham chieu mut trong khi
     // dang tham chieu notmut toi 1 gia tri
+    // println("r10 = {r10}");
+
+    let mut s7 = String::from("hello");
+    let r11 = &s7; // no problem.
+    let r12 = &s7; // no problem.
+    println!(" {r11} and {r12}");
+    let r13 = &mut s7; // no problem do pham vi cua r11 va r12 da ket thuc o line 50
+    println!("r13 = {r13}");
+   
 }
 
 fn calculate_length(s: &String) -> usize {
