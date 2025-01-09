@@ -4,6 +4,7 @@ fn main() {
 
     let len = calculate_length(&s1);
     println!("The length of '{s1}' is {len}");
+    // tham chieu thi khong chiem quyen so huu
     // s la reference nen sau khi thoai khoi pham vi ham thi s bi huy,
     //nhung s1 khong bi huy do ko chuyen onership sang s
     

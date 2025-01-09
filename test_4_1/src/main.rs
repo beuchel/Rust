@@ -41,11 +41,7 @@ fn main() {
     let s7 = String::from("hello");
     let s8 = take_and_gives_back(s7);
     println!("s8 = {s8}");
-<<<<<<< HEAD
-    println!("s7 = {s7}");
-=======
     // println!("s7 = {s7}"); // error vi s7 da duoc chuyen onership
->>>>>>> 711a2439043c1acb94be28ee28488b255099fb8a
 
 }
 
