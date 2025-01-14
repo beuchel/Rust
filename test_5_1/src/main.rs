@@ -31,7 +31,10 @@ fn main() {
 // nen van hop le
     
 //// tuple struct khong co truong.
-    
+    let black = Color(0,0,0);
+
+// Struct unit.
+    let subject = AlwaysEqual;
 }
 
 struct User {
@@ -62,5 +65,8 @@ fn build_user1(email: String, username: String) -> User {
 
 // tuple struct khong co truong.
 struct Color (i32, i32, i16);
+
+// Struct unit.
+struct AlwaysEqual;
 
 
