@@ -1,5 +1,11 @@
 fn main() {
-    println!("Hello, world!");
+    let rect = Rectangle {
+        width: 30,
+        height: 50,
+    };
+
+    println!("the area of rectangle is {} square pixels",rect.area());
+    println!("The rectangle has a nonzero width; it is {}",rect.width());
 }
 
 #[derive(Debug)]
@@ -8,4 +14,12 @@ struct Rectangle {
     height: u32
 }
 
-fn area
+impl Rectangle {
+    fn area(&self) -> u32 {
+        self.width * self.height
+    }
+
+    fn width(&self) -> bool {
+        self.width > 0
+    }
+}
